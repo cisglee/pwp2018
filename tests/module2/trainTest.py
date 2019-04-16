@@ -29,14 +29,14 @@ def containsTrain1(test):
     test.test = containsCheck
     test.description = lambda: "Checking whether you provide the track number"
 
-@t.test(2)
-def containsPeak18_22(test):
-    def containsCheck():
-        output = lib.outputOf(test.fileName, stdinArgs=[18, 12])
-        if "peak" in output or "rush" in output:
-            return True
-        else:
-            return False
-
-    test.test = containsCheck
-    test.description = lambda: "Checking whether you mentioned peak hours"
+#@t.test(2)
+#def containsPeak18_22(test):
+#    def containsCheck():
+#        output = lib.outputOf(test.fileName, stdinArgs=[18, 12])
+#        if "peak" in output or "rush" in output:
+#            return True
+#        else:
+#            return False
+#
+#    test.test = containsCheck
+#    test.description = lambda: "Checking whether you mentioned peak hours"
